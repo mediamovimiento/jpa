@@ -51,5 +51,24 @@ public class Order {
         return product;
     }
 
-    // other getters and setters
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void setPurchaseDate(Date purchaseDate) {
+        this.purchaseDate = purchaseDate;
+    }
+
+    public float getAmount() {
+        return amount;
+    }
+
+    public void setAmount(float amount) {
+        this.amount = amount;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+// other getters and setters
 }

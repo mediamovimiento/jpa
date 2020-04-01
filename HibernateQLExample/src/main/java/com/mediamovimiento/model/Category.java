@@ -39,5 +39,20 @@ public class Category {
         return products;
     }
 
-    // other getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
+    }
+// other getters and setters
+
+    public void setId(long id) {
+        this.id = id;
+    }
 }
