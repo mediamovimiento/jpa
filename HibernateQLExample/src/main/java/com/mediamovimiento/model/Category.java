@@ -1,20 +1,14 @@
 package com.mediamovimiento.model;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Entity
 @Table(name = "CATEGORY")
 public class Category {
 
-    private long id;
+    private int id;
     private String name;
 
     private Set<Product> products;
@@ -28,8 +22,7 @@ public class Category {
 
     @Id
     @Column(name = "CATEGORY_ID")
-    @GeneratedValue
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -52,7 +45,7 @@ public class Category {
     }
 // other getters and setters
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
